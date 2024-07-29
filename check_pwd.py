@@ -13,4 +13,12 @@ def check_pwd(test_value):
 	if lower_count == 0:
 		return False
 
+	upper_count = 0
+	for char in test_value:
+		if char.isupper() == True:
+			upper_count += 1
+
+	if upper_count == 0:
+		return False
+
 	return True
