@@ -21,4 +21,12 @@ def check_pwd(test_value):
 	if upper_count == 0:
 		return False
 
+	digit_count = 0
+	for char in test_value:
+		if char.isdigit() == True:
+			digit_count += 1
+
+	if digit_count == 0:
+		return False
+
 	return True
