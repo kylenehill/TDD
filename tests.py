@@ -9,7 +9,7 @@ class TestCase(unittest.TestCase):
         self.assertFalse(check_pwd(test_value), message)
 
     def test2(self):
-    	test_value = 'testpassword123'
+    	test_value = 'testpwd'
     	message = "Test did NOT pass: {}".format(test_value)
     	self.assertFalse(check_pwd(test_value), message)
 
