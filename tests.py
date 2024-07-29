@@ -28,6 +28,11 @@ class TestCase(unittest.TestCase):
     	message = "Test did NOT pass: {}".format(test_value)
     	self.assertFalse(check_pwd(test_value), message)
 
+    def test6(self):
+    	test_value = 'test4uppercasechar'
+    	message = "Test did NOT pass: {}".format(test_value)
+    	self.assertFalse(check_pwd(test_value), message)
+
 
 if __name__ == '__main__':
     unittest.main()
