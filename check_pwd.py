@@ -29,4 +29,12 @@ def check_pwd(test_value):
 	if digit_count == 0:
 		return False
 
+	symbol_count = 0
+	for char in test_value:
+		if char in "~`!@#$%^&*()_+-=":
+			symbol_count += 1
+
+	if symbol_count == 0:
+		return False
+
 	return True

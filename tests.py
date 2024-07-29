@@ -49,7 +49,7 @@ class TestCase(unittest.TestCase):
     	self.assertFalse(check_pwd(test_value), message)
 
     def test10(self):
-    	test_value = 'checkFORany$ymbo1'
+    	test_value = 'checkFORanySymbo1'
     	message = "Test did NOT pass: {}".format(test_value)
     	self.assertFalse(check_pwd(test_value), message)
 
